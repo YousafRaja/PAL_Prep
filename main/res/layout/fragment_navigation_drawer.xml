@@ -1,0 +1,105 @@
+<!--this part represents the green Navigation Drawer-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2_slidercamo320x480"
+    tools:context="ca2.testproject.shotgunstudios2.palprepbeta1.NavigationDrawerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Instructors"
+        android:id="@+id/btnMyProgress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/fragmentBtnText"
+        android:background="@drawable/bg_darkbluewood320x50"
+
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:layout_marginBottom="2dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practice Test"
+        android:id="@+id/btnPracticeTests"
+        android:layout_below="@+id/btnMyProgress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#EF7B45"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:layout_marginBottom="2dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question Bank"
+        android:id="@+id/btnQuestionBank"
+        android:layout_below="@+id/btnPracticeTests"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EF7B45"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:layout_marginBottom="2dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:id="@+id/btnHandbook"
+        android:layout_below="@+id/btnQuestionBank"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EF7B45"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:layout_marginBottom="2dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:id="@+id/btnMore"
+        android:layout_below="@+id/btnHandbook"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EF7B45"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp" />
+
+    Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practical Review"
+        android:id="@+id/btnPracStart"
+        android:textColor="#EF7B45"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:layout_below="@+id/btnMore"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp" />
+
+    ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/bg_darkbluewood320x50"
+        android:layout_below="@+id/btnPracStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name = "primaryColor">#5EB1BF</color>
+    <color name = "primaryColorDark">#042A2B</color>
+    <color name = "fragmentBtnBackGround">#29339B</color>
+    <color name = "fragmentBtnText">#EF7B45</color>
+    <color name ="accentColor">#50714f</color>
+
+    <color name ="rightColor">#8012b900</color>
+    <color name ="wrongColor">#80a50e1e</color>
+</resources>

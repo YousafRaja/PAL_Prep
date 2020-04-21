@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_below = "@+id/app_bar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below = "@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1"
+                android:id="@+id/menu"
+                android:background="@drawable/bg2_questionbank320x480">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="aaaaa"
+                    android:id="@+id/location"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentRight="true" />
+
+
+                <ScrollView
+                    android:layout_below = "@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/scrollView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp"
+                    >
+
+                <RelativeLayout
+                    android:layout_below = "@+id/question"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/choices"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentRight="false">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/q1title"
+                        android:id="@+id/question"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+
+                    <RadioGroup
+                        android:layout_below = "@+id/question"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/radio_group1">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1optionA"
+                        android:id="@+id/radioButton1"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_medium_material" />
+
+                    <RadioButton
+                        android:layout_below = "@+id/radioButton1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1optionB"
+                        android:id="@+id/radioButton2"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:elegantTextHeight="false" />
+
+                    <RadioButton
+                        android:layout_below = "@+id/radioButton2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1optionC"
+                        android:id="@+id/radioButton3"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_medium_material" />
+
+                    <RadioButton
+                        android:layout_below = "@+id/radioButton3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1optionD"
+                        android:id="@+id/radioButton4"
+                        android:onClick="onRadioButtonClicked"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_medium_material" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_below = "@+id/radio_group1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/q1title"
+                        android:id="@+id/explanationTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" />
+
+                </RelativeLayout>
+
+                </ScrollView>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/scrollView2"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="false">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/answer"
+
+                        android:layout_above="@+id/btnNext"
+                        android:layout_centerHorizontal="true"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal"
+                        android:background="@android:color/background_dark" />
+
+                    <Button
+                        android:layout_toRightOf="@+id/btnPrev"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:id="@+id/btnNext"
+                        android:onClick="onClickNext"
+
+                        android:layout_alignTop="@+id/btnPrev"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginEnd="22dp"
+                        android:padding="22dp" />
+
+
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Previous"
+                        android:id="@+id/btnPrev"
+                        android:onClick="onClickPrev"
+
+                        android:layout_marginBottom="23dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginStart="23dp"
+                        android:padding="22dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.NavigationDrawerFragment"
+            android:layout_width="@dimen/nav_drawer_width"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|top"
+                android:weightSum="1"
+                android:background="@drawable/bg_wallpaper320x480"
+                android:backgroundTint="@color/abc_secondary_text_material_light"
+                android:backgroundTintMode="src_atop">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Gun Test Canada"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="If you find this app helpful, please consider reviewing it. If you find any issues or have suggestions, please let me know using the feedback tab. You can get started by tapping the icon on the top left. Have fun :)"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/NRmanual"
+                    android:text="non-restricted manual: &lt;a href=&apos;http://www.gov.pe.ca/photos/original/CFSCmanualVer2.pdf&apos;&lt;/a>"
+                    android:layout_weight="0.04"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/RManual"
+                    android:text="restricted manual: http://www.gov.pe.ca/photos/original/CRFSCmanualV2.pdf"
+                    android:layout_weight="0.04"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.NavigationDrawerFragment"
+            android:layout_width="@dimen/nav_drawer_width"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

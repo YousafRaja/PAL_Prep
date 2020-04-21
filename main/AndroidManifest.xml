@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca2.testproject.shotgunstudios.palprepbeta1"
+    >
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:name="ca2.testproject.shotgunstudios2.palprepbeta1.GunTestCanada"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        >
+
+    <meta-data
+        android:name="com.google.android.gms.analytics.globalConfigResource"
+        android:resource="@xml/analytics_global_config"/>
+
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.SubActivity"
+            android:label="@string/title_activity_sub">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.FindInstructorActivity"
+            android:label="@string/title_activity_myprogress"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.PracticeTestActivity"
+            android:label="@string/title_activity_practicetest"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.QuestionBankActivity"
+            android:label="@string/title_activity_questionbank"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.CategoriesActivity"
+            android:label="@string/title_categories"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.InstructorActivity"
+            android:label="Firearms Instructors"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.ScoreActivity"
+            android:label="@string/title_activity_more"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="ca2.testproject.shotgunstudios2.palprepbeta1.PracticalReviewActivity"
+            android:label="Practical Review"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca2.testproject.shotgunstudios2.palprepbeta1.MainActivity" />
+        </activity>
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

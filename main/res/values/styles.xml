@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name ="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">//android assumes your text has to be light in colour with a dark action bar
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+    <style name="MyCustomToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#EF7B45</item>
+        <item name="android:textColorSecondary">#59594A</item>
+    </style>
+
+
+</resources>

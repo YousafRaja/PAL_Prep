@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GunTestCanada</string>
+    <string name="title_activity_main">Gun Test Canada</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="b1">A Button</string>
+    <string name="b2">Another Button</string>
+    <string name="title_activity_myprogress">Firearms Instructors</string>
+    <string name="title_activity_practicetest">Practice Test</string>
+    <string name="title_activity_questionbank">Question Bank</string>
+    <string name="title_activity_handbook">Official Handbook</string>
+    <string name="title_activity_more">Practice Test Results</string>
+    <string name="title_categories">Categories</string>
+
+
+    <string name="MyProgressTitle">My Progress page</string>
+    <string name="select_province">Select your province from the list below to find a class or an instructor.</string>
+    <string name="provInfoAB">Alberta Hunter Education Instructors\' Association : +1 (866) 852-4342</string>
+    <string name="provInfoBC">Firearms Office
++1 (800) 731-4000 extension 9530</string>
+    <string name="provInfoMB">Firearms Office
++1 (800) 731-4000 extension 8004</string>
+    <string name="provInfoNB">
+        To take the CFSC, contact the Department of Natural Resources.
+        To take the CRFSC, contact the New Brunswick Firearms Office.
+    </string>
+
+    <string name="provInfoNFL">
+        To take the CFSC, contact the College of North Atlantic
+        To take the CRFSC, contact the CFO Office
+        Call 1 (888) 982-2268 to find out where you can take the course.
+    </string>
+
+    <string name = "provInfoNT">
+        Contact the Alberta CFO Office
+        1 (800) 731-4000 extension 9026
+    </string>
+
+    <string name = "provInfoNS">
+        Contact Hnatiuk\'s Hunting and Fishing
+        1 (855) 472-0281
+    </string>
+
+    <string name = "provInfoNU">
+        Firearms Office
+        1 (800) 731-4000 extension 4511
+    </string>
+
+    <string name = "provInfoON">
+        Firearms Office
+        1 (800) 731-4000 extension 7503
+
+        or
+
+        Firearms Safety Education Service of Ontario (FSESO)
+        1 (800) 731-4000 ext 7537
+    </string>
+
+
+    <string name = "provInfoPEI">
+        Forests, Fish and Wildlife Division
+        1 (902) 368-4683
+    </string>
+
+    <string name="provInfoQB">
+        To take the CFSC, contact Sécurité nature - 1 (888) 523-2863
+        To take the CRFSC/CFSC, contact Fédération québécoise de tir - 1 (514) 252-3056
+    </string>
+
+    <string name="provInfoSK">
+        Firearms Office - 1 (800) 731-4000 extension 8502
+    </string>
+
+    <string name="provInfoYK">
+        Firearms Office - 1 (800) 731-4000 extension 953
+    </string>
+
+
+
+    <string name="q1title">Which one of the following is not a part of the Vital Four ACTS of Firearms Safety?</string>
+    <string name="q1optionA">Always assume the firearm is loaded.</string>
+    <string name="q1optionB">Control the muzzle direction at all times.</string>
+    <string name="q1optionC">Trigger finger off the trigger until you\'re ready to shoot.</string>
+    <string name="q1optionD">See that the firearm is loaded, PROVE it safe.</string>
+
+    <string name="Error1">Not enough questions to begin the test, try including more categories.</string>
+
+
+</resources>
